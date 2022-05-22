@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI計算機</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      form {
+        background-image: url(./img/pic-1.jpg);
+
+        /*height: 250px;
+        width: 40%;
+        margin: 0 auto;*/
+      }
+      .my-button {
+        margin-top: 60px;
+      }
+      /*@media screen and (max-width: 1024px) {
+        form {
+          width: 80%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        form {
+          width: 100%;
+          input {
+            width: 70%;
+          }
+        }
+      }*/
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="title">BMI計算機</div>
+      <form action="">
+        <label for="name">姓名&nbsp;</label>
+        <input type="text" name="name" id="name" required />
+        <br />
+        <label for="height">身高&nbsp;</label>
+        <input type="number" step="0.1" name="height" id="height" required />
+        <br />
+        <label for="weight">體重&nbsp;</label>
+        <input type="number" step="0.1" name="weight" id="weight" required />
+        <br /><br />
+        <button type="submit" class="my-button">計算</button><br />
+      </form>
+      <a href="./index.html" style="font-size: 20px">返回首頁</a>
+    </div>
+  </body>
+</html>
